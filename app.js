@@ -92,3 +92,11 @@ if (organizationChartViewer) {
 document.addEventListener("keydown", event => {
   if (event.key === "Escape") hideOrganizationChart();
 });
+
+const headerOpenReport = document.getElementById("headerOpenReport");
+if (headerOpenReport && reportModal) {
+  headerOpenReport.addEventListener("click", () => {
+    reportModal.classList.add("open");
+    reportModal.setAttribute("aria-hidden", "false");
+  });
+}
