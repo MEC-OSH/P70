@@ -11,7 +11,7 @@ GitHub Pages-ready public website and admin prototype for:
 - English and Arabic switch with RTL layout
 - MEC yellow, black and white theme
 - Supplied Sama Yas hero image
-- Live Safe Man-Hours counter using UAE time
+- Live Man-Hours counter using UAE time
 - Monday-Saturday schedule, 08:00-13:00 and 14:00-17:00
 - Baseline 2,568,386 at 17:00 on 23 July 2026
 - 1,500 manpower
@@ -50,3 +50,13 @@ Expected GitHub Pages URL:
 ## Security note
 
 Do not place Supabase service-role keys, Microsoft client secrets or Outlook passwords in GitHub Pages files. Use Supabase Edge Functions or another secure backend for privileged operations.
+
+
+## Live Supabase connection
+
+This package is configured for `https://absfyhdyirrdwkgjwqqn.supabase.co` using the browser-safe publishable key.
+The Admin Dashboard now supports email OTP, live performance settings, safety-report management, document/news/gallery uploads, locations, holidays and enquiries.
+
+Before publishing, run `MEC_OSH_Supabase_Security_Setup.sql`, create the admin user `muhammed.shamil@mecemirates.com`, change the Magic Link email template to use `{{ .Token }}`, and configure the GitHub Pages admin URL in Auth URL Configuration.
+
+Microsoft 365 direct sending is not embedded. The Reply button opens the user's email application. A secure Microsoft Graph / Edge Function connection is required for automatic sending and Sent Items synchronisation.

@@ -18,11 +18,12 @@
     <nav class="links">
       <a href="#home" data-i18n="home">Home</a>
       <a href="#about" data-i18n="about">About OSH</a>
-      <a href="#organization-chart">Organization Chart</a>
       <a href="#performance" data-i18n="performance">Performance</a>
-      <a href="#reports" data-i18n="reports">Safety Reports</a>
       <a href="#documents" data-i18n="documents">OSH Documents</a>
+      <a href="#reports" data-i18n="reports">Safety Reports</a>
       <a href="#news" data-i18n="news">News</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#organization-chart">Organization Chart</a>
       <a href="#gallery" data-i18n="gallery">Gallery</a>
       <a href="#emergency" data-i18n="emergency">Emergency</a>
       <a href="#location">Location</a>
@@ -40,6 +41,7 @@
 </header>
 
 <main>
+
 <section id="home" class="hero">
   <div class="hero-slide active" style="background-image:linear-gradient(90deg,rgba(0,0,0,.82),rgba(0,0,0,.25)),url('assets/sama-yas-hero.jpg')">
     <div class="container hero-copy">
@@ -49,7 +51,6 @@
     </div>
   </div>
 </section>
-
 
 <section id="stakeholders" class="section stakeholders-section">
   <div class="container">
@@ -61,33 +62,53 @@
     <div class="stakeholder-grid">
       <article class="stakeholder-card">
         <div class="stakeholder-role">Client</div>
-        <div class="stakeholder-logo-box">
+        <a
+          class="stakeholder-logo-box stakeholder-logo-link"
+          href="https://www.aldar.com/properties/en"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open ALDAR Properties website">
           <img src="assets/aldar-client.webp" alt="ALDAR Properties logo">
-        </div>
+        </a>
         <h3>ALDAR Properties</h3>
       </article>
 
       <article class="stakeholder-card">
         <div class="stakeholder-role">PMC</div>
-        <div class="stakeholder-logo-box dark-logo-box">
+        <a
+          class="stakeholder-logo-box dark-logo-box stakeholder-logo-link"
+          href="https://www.hillintl.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open Hill International website">
           <img src="assets/hill-international.png" alt="Hill International logo">
-        </div>
+        </a>
         <h3>Hill International</h3>
       </article>
 
       <article class="stakeholder-card">
         <div class="stakeholder-role">Consultant</div>
-        <div class="stakeholder-logo-box dark-logo-box">
+        <a
+          class="stakeholder-logo-box dark-logo-box stakeholder-logo-link"
+          href="https://www.mottmac.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open Mott MacDonald website">
           <img src="assets/mott-macdonald.png" alt="Mott MacDonald logo">
-        </div>
+        </a>
         <h3>Mott MacDonald</h3>
       </article>
 
       <article class="stakeholder-card">
         <div class="stakeholder-role">Main Contractor</div>
-        <div class="stakeholder-logo-box dark-logo-box">
+        <a
+          class="stakeholder-logo-box dark-logo-box stakeholder-logo-link"
+          href="https://www.mecemirates.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Open MEC Emirates website">
           <img src="assets/mec-main-contractor.png" alt="MEC logo">
-        </div>
+        </a>
         <h3>Masri Engineering &amp; Contracting, MEC S.A.L.</h3>
       </article>
     </div>
@@ -106,25 +127,156 @@
 </div>
 </section>
 
-
 <section id="performance" class="section dark">
 <div class="container">
   <div class="section-head light"><span data-i18n="performance">Performance</span><h2 data-i18n="livePerformance">Live cumulative OSH performance</h2></div>
   <div class="stats">
     <div class="stat"><label data-i18n="manpower">Total Manpower</label><strong id="manpower">1500</strong></div>
-    <div class="stat"><label data-i18n="manhours">Safe Man-Hours</label><strong id="manhours">2,568,386</strong><small data-i18n="liveCounter">Live UAE working-time counter</small></div>
+    <div class="stat"><label data-i18n="manhours">Man-Hours</label><strong id="manhours">2,568,386</strong><small data-i18n="liveCounter">Live UAE working-time counter</small></div>
     <div class="stat"><label data-i18n="ltiDays">LTI-Free Days</label><strong id="ltiDays">0</strong></div>
-    <div class="stat"><label data-i18n="trainingSessions">Training Sessions</label><strong>1,773</strong></div>
-    <div class="stat"><label data-i18n="personnelTrained">Personnel Trained</label><strong>39,442</strong></div>
-    <div class="stat"><label data-i18n="trainingHours">Training Hours</label><strong>18,433.55</strong></div>
-    <div class="stat"><label data-i18n="inductions">OSH Inductions</label><strong>2,238</strong></div>
-    <div class="stat"><label data-i18n="meetings">OSH Meetings</label><strong>73</strong></div>
-    <div class="stat"><label data-i18n="audits">OSH Audits</label><strong>6</strong></div>
-    <div class="stat"><label data-i18n="inspections">OSH Inspections</label><strong>167</strong></div>
-    <div class="stat"><label data-i18n="reviews">Procedure Reviews</label><strong>64</strong></div>
-    <div class="stat"><label data-i18n="drills">Emergency Drills</label><strong>6</strong></div>
+    <div class="stat"><label data-i18n="trainingSessions">Training Sessions</label><strong id="trainingSessions">1,773</strong></div>
+    <div class="stat"><label data-i18n="personnelTrained">Personnel Trained</label><strong id="personnelTrained">39,442</strong></div>
+    <div class="stat"><label data-i18n="trainingHours">Training Hours</label><strong id="trainingHours">18,433.55</strong></div>
+    <div class="stat"><label data-i18n="inductions">OSH Inductions</label><strong id="oshInductions">2,238</strong></div>
+    <div class="stat"><label data-i18n="meetings">OSH Meetings</label><strong id="oshMeetings">73</strong></div>
+    <div class="stat"><label data-i18n="audits">OSH Audits</label><strong id="oshAudits">6</strong></div>
+    <div class="stat"><label data-i18n="inspections">OSH Inspections</label><strong id="oshInspections">167</strong></div>
+    <div class="stat"><label data-i18n="reviews">Procedure Reviews</label><strong id="procedureReviews">64</strong></div>
+    <div class="stat"><label data-i18n="drills">Emergency Drills</label><strong id="emergencyDrills">6</strong></div>
   </div>
 </div>
+</section>
+
+<section id="documents" class="section pale">
+<div class="container">
+  <div class="section-head"><span data-i18n="documents">OSH Documents</span><h2 data-i18n="library">Public document library</h2></div>
+  <div class="doc-tools"><input id="docSearch" type="search" placeholder="Search documents"><select id="docFilter"><option value="all">All sections</option></select></div>
+  <div id="documentGrid" class="document-grid"></div>
+</div>
+</section>
+
+<section id="reports" class="section">
+<div class="container">
+  <div class="section-head">
+    <span data-i18n="reports">Safety Reports</span>
+    <h2 data-i18n="reportConcern">Report a Safety Concern</h2>
+  </div>
+
+  <div class="report-intro">
+    <p>Workers and visitors may anonymously report unsafe acts, unsafe conditions, good practices, near misses, incidents, and other OSH concerns.</p>
+  </div>
+
+  <div class="report-actions">
+    <button class="primary" id="openReport" data-i18n="reportConcern">Report a Safety Concern</button>
+    <a class="secondary" href="https://wa.me/971585125005" target="_blank" rel="noopener" data-i18n="whatsappConcern">Report a Safety Concern on WhatsApp</a>
+  </div>
+
+  <div class="tracker">
+    <h3 data-i18n="trackReport">Track a Report</h3>
+    <div class="inline-form">
+      <input id="trackRef" placeholder="Reference number">
+      <button id="trackBtn" class="primary">Track</button>
+    </div>
+    <p id="trackResult" aria-live="polite"></p>
+  </div>
+</div>
+</section>
+
+<section id="news" class="section">
+<div class="container">
+  <div class="section-head"><span data-i18n="news">News</span><h2 data-i18n="newsTitle">OSH news and announcements</h2></div>
+  <div class="news-grid" id="newsGrid">
+    <article><span>Safety Campaign</span><h3>Beat the Heat Campaign</h3><p>Hydration, shaded recovery, symptom recognition and midday-break awareness activities continue across the project.</p><a href="#">Read more</a></article>
+    <article><span>Training</span><h3>Work at Height Refresher</h3><p>Supervisors and operatives completed refresher training on fall protection, access control and scaffold safety.</p><a href="#">Read more</a></article>
+    <article><span>Audit</span><h3>Q3 OSH Audit Preparation</h3><p>Project teams are reviewing records, close-outs and site controls ahead of the upcoming audit.</p><a href="#">Read more</a></article>
+  </div>
+</div>
+</section>
+
+<section id="certificates" class="section certificates-section">
+  <div class="container">
+    <div class="section-head certificates-heading">
+      <span>Compliance &amp; Recognition</span>
+      <h2>Certificates &amp; Accreditations</h2>
+    </div>
+
+    <div class="certificate-grid">
+      <article class="certificate-card">
+        <button
+          type="button"
+          class="certificate-image-button"
+          data-certificate-image="assets/iso-45001-certificate.png"
+          data-certificate-title="ISO 45001:2018 Certification">
+          <img
+            src="assets/iso-45001-certificate.png"
+            alt="MEC ISO 45001:2018 occupational health and safety management system certificate"
+            loading="lazy">
+        </button>
+        <div class="certificate-copy">
+          <span class="certificate-badge">ISO 45001:2018</span>
+          <h3>Occupational Health &amp; Safety Management System</h3>
+          <p>Certified by Bureau Veritas Certification Holding SAS.</p>
+        </div>
+      </article>
+
+      <article class="certificate-card">
+        <button
+          type="button"
+          class="certificate-image-button"
+          data-certificate-image="assets/adosh-approval-certificate.png"
+          data-certificate-title="ADOSH / ADPHC Approval Certificate">
+          <img
+            src="assets/adosh-approval-certificate.png"
+            alt="MEC ADOSH and Abu Dhabi Public Health Centre approval certificate"
+            loading="lazy">
+        </button>
+        <div class="certificate-copy">
+          <span class="certificate-badge">ADOSH / ADPHC</span>
+          <h3>OSH Management System Approval</h3>
+          <p>Approved by Abu Dhabi Public Health Centre.</p>
+        </div>
+      </article>
+
+      <article class="certificate-card">
+        <button
+          type="button"
+          class="certificate-image-button"
+          data-certificate-image="assets/iso-14001-certificate-page-1.png"
+          data-certificate-title="ISO 14001:2015 Certification - Page 1">
+          <img
+            src="assets/iso-14001-certificate-page-1.png"
+            alt="MEC ISO 14001:2015 environmental management system certificate page one"
+            loading="lazy">
+        </button>
+        <div class="certificate-copy">
+          <span class="certificate-badge">ISO 14001:2015</span>
+          <h3>Environmental Management System</h3>
+          <p>Certified by Bureau Veritas Certification Holding SAS.</p>
+        </div>
+      </article>
+
+      
+
+      <article class="certificate-card">
+        <button
+          type="button"
+          class="certificate-image-button"
+          data-certificate-image="assets/iso-9001-certificate.png"
+          data-certificate-title="ISO 9001:2015 Certification">
+          <img
+            src="assets/iso-9001-certificate.png"
+            alt="MEC ISO 9001:2015 quality management system certificate"
+            loading="lazy">
+        </button>
+        <div class="certificate-copy">
+          <span class="certificate-badge">ISO 9001:2015</span>
+          <h3>Quality Management System</h3>
+          <p>Certified by Bureau Veritas Certification Holding SAS.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
 </section>
 
 <section id="organization-chart" class="section organization-chart-section">
@@ -161,52 +313,6 @@
   </div>
 </section>
 
-<section id="reports" class="section">
-<div class="container">
-  <div class="section-head">
-    <span data-i18n="reports">Safety Reports</span>
-    <h2 data-i18n="reportConcern">Report a Safety Concern</h2>
-  </div>
-
-  <div class="report-intro">
-    <p>Workers and visitors may anonymously report unsafe acts, unsafe conditions, good practices, near misses, incidents, and other OSH concerns.</p>
-  </div>
-
-  <div class="report-actions">
-    <button class="primary" id="openReport" data-i18n="reportConcern">Report a Safety Concern</button>
-    <a class="secondary" href="https://wa.me/971585125005" target="_blank" rel="noopener" data-i18n="whatsappConcern">Report a Safety Concern on WhatsApp</a>
-  </div>
-
-  <div class="tracker">
-    <h3 data-i18n="trackReport">Track a Report</h3>
-    <div class="inline-form">
-      <input id="trackRef" placeholder="Reference number">
-      <button id="trackBtn" class="primary">Track</button>
-    </div>
-    <p id="trackResult" aria-live="polite"></p>
-  </div>
-</div>
-</section>
-
-<section id="documents" class="section pale">
-<div class="container">
-  <div class="section-head"><span data-i18n="documents">OSH Documents</span><h2 data-i18n="library">Public document library</h2></div>
-  <div class="doc-tools"><input id="docSearch" type="search" placeholder="Search documents"><select id="docFilter"><option value="all">All sections</option></select></div>
-  <div id="documentGrid" class="document-grid"></div>
-</div>
-</section>
-
-<section id="news" class="section">
-<div class="container">
-  <div class="section-head"><span data-i18n="news">News</span><h2 data-i18n="newsTitle">OSH news and announcements</h2></div>
-  <div class="news-grid">
-    <article><span>Safety Campaign</span><h3>Beat the Heat Campaign</h3><p>Hydration, shaded recovery, symptom recognition and midday-break awareness activities continue across the project.</p><a href="#">Read more</a></article>
-    <article><span>Training</span><h3>Work at Height Refresher</h3><p>Supervisors and operatives completed refresher training on fall protection, access control and scaffold safety.</p><a href="#">Read more</a></article>
-    <article><span>Audit</span><h3>Q3 OSH Audit Preparation</h3><p>Project teams are reviewing records, close-outs and site controls ahead of the upcoming audit.</p><a href="#">Read more</a></article>
-  </div>
-</div>
-</section>
-
 <section id="gallery" class="section pale">
 <div class="container">
   <div class="section-head"><span data-i18n="gallery">Gallery</span><h2 data-i18n="galleryTitle">OSH photo gallery</h2></div>
@@ -216,14 +322,14 @@
     <div class="slide"><div class="placeholder">CAMPAIGN</div><h3>Beat the Heat Campaign</h3></div>
     <button class="slide-prev">‹</button><button class="slide-next">›</button>
   </div>
-  <div class="gallery-grid">
+  <div class="gallery-grid" id="galleryGrid">
     <figure><img src="assets/sama-yas-hero.jpg" alt="Sama Yas project"><figcaption>Sama Yas Residential Development</figcaption></figure>
     <figure><div class="placeholder">INSPECTION</div><figcaption>Joint OSH Inspection</figcaption></figure>
     <figure><div class="placeholder">TRAINING</div><figcaption>Work at Height Training</figcaption></figure>
   </div>
 
   <div class="section-head awards-head"><span>Awards</span><h2>Award Image Gallery</h2></div>
-  <div class="award-slider">
+  <div class="award-slider" id="awardSlider">
     <div class="award active"><div class="award-placeholder">★</div><h3>ALDAR OSH Shining Star</h3></div>
     <div class="award"><div class="award-placeholder">🏆</div><h3>Best Safety Performance</h3></div>
     <div class="award"><div class="award-placeholder">✓</div><h3>HSE Initiative of the Year</h3></div>
@@ -243,7 +349,6 @@
   </div>
 </div>
 </section>
-
 
 <section id="location" class="section location-section">
   <div class="container">
@@ -331,7 +436,7 @@
   </div>
 </div>
 
-<div id="viewer" class="modal" aria-hidden="true"><div class="modal-card viewer-card"><button class="viewer-close">×</button><h2 id="viewerTitle"></h2><div class="viewer-placeholder">Document preview appears here.<br>Connect Supabase Storage and upload a PDF preview to enable live viewing.</div></div></div>
+<div id="viewer" class="modal" aria-hidden="true"><div class="modal-card viewer-card"><button class="viewer-close">×</button><h2 id="viewerTitle"></h2><iframe id="documentViewerFrame" class="document-viewer-frame" title="Document preview"></iframe></div></div>
 
 
 <section class="bottom-emergency" aria-label="Emergency contact information">
@@ -380,8 +485,23 @@
   </div>
 </div>
 
+
+<div id="certificateViewer" class="certificate-modal" aria-hidden="true">
+  <div class="certificate-modal-content">
+    <button
+      type="button"
+      class="certificate-modal-close"
+      id="closeCertificateViewer"
+      aria-label="Close certificate viewer">×</button>
+    <h2 id="certificateViewerTitle">Certificate</h2>
+    <img id="certificateViewerImage" src="" alt="">
+  </div>
+</div>
+
 <footer><div class="container footer-inner"><strong>MEC OSH Department</strong><span>Masri Engineering & Contracting, MEC S.A.L.</span><span>© 2026 Sama Yas Residential Development</span></div></footer>
 <script>window.CATEGORY_DATA=[{"name": "Housekeeping & General Workplace Amenities", "ua": 36, "uc": 188}, {"name": "Traffic Management & Logistics", "ua": 23, "uc": 51}, {"name": "Working at Height", "ua": 104, "uc": 89}, {"name": "Scaffolding/Ladder", "ua": 111, "uc": 195}, {"name": "Personal Protective Equipment", "ua": 87, "uc": 16}, {"name": "Electrical Safety", "ua": 29, "uc": 49}, {"name": "Hand Tools", "ua": 23, "uc": 25}, {"name": "Excavations", "ua": 4, "uc": 3}, {"name": "Lifting Equipment and Lifting Accessories", "ua": 31, "uc": 45}, {"name": "Portable Power Tools", "ua": 32, "uc": 49}, {"name": "Plant and Equipment", "ua": 20, "uc": 32}, {"name": "Confined Space", "ua": 1, "uc": 8}, {"name": "Hot Work Operations", "ua": 41, "uc": 41}, {"name": "Compressed Air and Gases", "ua": 0, "uc": 9}, {"name": "Manual Handling", "ua": 17, "uc": 9}, {"name": "Welfare Facilities", "ua": 28, "uc": 39}, {"name": "Hazardous Substances", "ua": 0, "uc": 20}, {"name": "Machine Guarding", "ua": 5, "uc": 8}, {"name": "Storage Arrangements", "ua": 22, "uc": 115}, {"name": "Barricading of Hazards", "ua": 62, "uc": 112}, {"name": "Access and Egress", "ua": 56, "uc": 78}, {"name": "Permit to Work", "ua": 20, "uc": 14}, {"name": "Safety Signage & Signals", "ua": 14, "uc": 14}, {"name": "Falsework/Formwork", "ua": 96, "uc": 112}, {"name": "Waste Management", "ua": 15, "uc": 66}, {"name": "First Aid Case", "ua": 4, "uc": 2}, {"name": "Near Miss Incident", "ua": 0, "uc": 0}, {"name": "Property Damage", "ua": 0, "uc": 0}, {"name": "Lost Time Injury", "ua": 0, "uc": 1}];</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase-config.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
